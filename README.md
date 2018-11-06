@@ -8,3 +8,5 @@ To install
 brew tap octo-cli/octo
 brew install octo
 ```
+
+For more information about `octo` - please see https://github.com/octo-cli/octo-cli/blob/master/README.md
