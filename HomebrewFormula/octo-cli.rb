@@ -20,15 +20,14 @@ class OctoCli < Formula
     cd bin_path do
       # Install the compiled binary into Homebrew's `bin` - a pre-existing
       # global variable
-      system "go", "build", "-o", bin/"octo-cli", "."
-      # go build -o bin/octo -ldflags "-X main.version=${VERSION:-development}"
+      system "go", "build", "-o", bin/"octo", "-ldflags", "-X main.version=0.0.0-20181019T143313Z", "."
     end
   end
 
   # Homebrew requires tests.
   test do
     # "2>&1" redirects standard error to stdout. The "2" at the end means "the
-    # exit code should be 2".
-    assert_match "0.0.0-20181019T143313Z", shell_output("#{bin}/octo-cli --version 2>&1", 2)
+    # exit code should be 0".
+    assert_match "0.0.0-20181019T143313Z", shell_output("#{bin}/octo --version", 0)
   end
 end
