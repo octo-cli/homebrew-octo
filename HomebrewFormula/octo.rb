@@ -1,6 +1,6 @@
 # Classname should match the name of the installed package.
-class OctoCli < Formula
-  desc "Octo-cli is a command line client for GitHub's REST API."
+class Octo< Formula
+  desc "Octo is a command line client for GitHub's REST API."
   homepage "https://github.com/octo-cli/octo-cli"
 
   # Source code archive. Each tagged release will have one
