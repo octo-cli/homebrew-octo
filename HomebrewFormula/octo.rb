@@ -4,8 +4,8 @@ class Octo< Formula
   homepage "https://github.com/octo-cli/octo-cli"
 
   # Source code archive. Each tagged release will have one
-  url "https://github.com/octo-cli/octo-cli/archive/0.0.0-20181019T143313Z.zip"
-  sha256 "4bac452582f98672ed8ce530dc744c44beeef441b52b69741e44f1ec7945156c"
+  url "https://github.com/octo-cli/octo-cli/archive/v0.1.0.zip"
+  sha256 "c426b3dd431efd7f062d4182fbe773994b53ef7a2fc7e09b004e6cf1ac96f68a"
   head "https://github.com/octo-cli/octo-cli"
 
   depends_on "go" => :build
@@ -20,7 +20,7 @@ class Octo< Formula
     cd bin_path do
       # Install the compiled binary into Homebrew's `bin` - a pre-existing
       # global variable
-      system "go", "build", "-o", bin/"octo", "-ldflags", "-X main.version=0.0.0-20181019T143313Z", "."
+      system "go", "build", "-o", bin/"octo", "-ldflags", "-X main.version=0.1.0", "."
     end
   end
 
@@ -28,6 +28,6 @@ class Octo< Formula
   test do
     # "2>&1" redirects standard error to stdout. The "2" at the end means "the
     # exit code should be 0".
-    assert_match "0.0.0-20181019T143313Z", shell_output("#{bin}/octo --version", 0)
+    assert_match "0.1.0", shell_output("#{bin}/octo --version", 0)
   end
 end
