@@ -7,11 +7,11 @@ class Octo < Formula
 
   if OS.mac?
     url "https://github.com/octo-cli/octo-cli/releases/download/v0.5.2/octo-cli_0.5.2_Darwin_x86_64.tar.gz"
-    sha256 "f5acfdb8e5f97e9a9e20b815d0db8797fa1340de5a62bd41fb8b0baa7d92f4b3"
+    sha256 "f29d9afb69ac5cb27aeffa401657ca032372a93da2cad7979d017e7c380063e2"
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/octo-cli/octo-cli/releases/download/v0.5.2/octo-cli_0.5.2_Linux_x86_64.tar.gz"
-      sha256 "c3fddbaa1c1757f3c60af5a77e6141a0f20aa56d73d3a30f1e2104692bf7853c"
+      sha256 "79440d0e6bcbab285c3435eede496a71298789402c59c29817b926c0a813261b"
     end
   end
 
