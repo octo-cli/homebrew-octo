@@ -2,16 +2,16 @@
 class Octo < Formula
   desc "cli client for GitHub"
   homepage "https://github.com/octo-cli/octo-cli"
-  version "0.14.0"
+  version "0.14.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/octo-cli/octo-cli/releases/download/v0.14.0/octo-cli_0.14.0_Darwin_x86_64.tar.gz"
-    sha256 "8b34f50d435f3279baf0c9d51a26df908ac53a956f4a8a6a01e931c781ec5961"
+    url "https://github.com/octo-cli/octo-cli/releases/download/v0.14.1/octo-cli_0.14.1_Darwin_x86_64.tar.gz"
+    sha256 "f014c9223340afe74066dafde48629ee7835e286dd4c92500f5bb99f6bed9eae"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/octo-cli/octo-cli/releases/download/v0.14.0/octo-cli_0.14.0_Linux_x86_64.tar.gz"
-      sha256 "7398b80290b886629ed4fc6a1bee97ef4a9bc3a0b09dcc10b2dca09ee9aae29e"
+      url "https://github.com/octo-cli/octo-cli/releases/download/v0.14.1/octo-cli_0.14.1_Linux_x86_64.tar.gz"
+      sha256 "17aa8bd1a6593ca8382acd9fbcc4e59ac80e8cb5b2e27f8d9c822dc598d0ce24"
     end
   end
 
