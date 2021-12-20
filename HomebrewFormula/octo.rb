@@ -3,7 +3,6 @@ class Octo < Formula
   desc "cli client for GitHub"
   homepage "https://github.com/octo-cli/octo-cli"
   version "0.23.0"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/octo-cli/octo-cli/releases/download/v0.23.0/octo-cli_0.23.0_Darwin_x86_64.tar.gz"
